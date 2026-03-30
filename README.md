@@ -1,10 +1,10 @@
-# 🧠 Smart Resume Analyzer & Job Recommender
+# Smart Resume Analyzer & Job Recommender
 
 A production-grade NLP project built with **Streamlit**, **TF-IDF**, and **Cosine Similarity** that intelligently analyzes resumes and recommends the best-fit job roles.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # 1. Clone / extract this project
@@ -26,7 +26,7 @@ Visit **http://localhost:8501** in your browser.
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ```
 resume_analyzer/
@@ -47,7 +47,7 @@ resume_analyzer/
 
 ---
 
-## 🧬 How the NLP Works
+## How the NLP Works
 
 ### 1. Text Extraction
 `pdfplumber` extracts clean text from the uploaded PDF resume (handles multi-column layouts, tables, etc.)
@@ -71,9 +71,9 @@ The blended score ensures both semantic text similarity **and** explicit skill c
 
 ### 4. Skill Gap Analysis
 For each matched job, the system identifies:
-- ✅ **Matched skills** — skills you already have
-- ⚠️ **Missing skills** — required skills to develop
-- 🌟 **Bonus skills** — nice-to-have skills you have
+- **Matched skills** — skills you already have
+- **Missing skills** — required skills to develop
+- **Bonus skills** — nice-to-have skills you have
 
 ### 5. Improvement Suggestions
 A rule-based engine analyzes:
@@ -84,7 +84,7 @@ A rule-based engine analyzes:
 
 ---
 
-## 📊 Features
+## Features
 
 | Feature | Details |
 |---|---|
@@ -98,7 +98,7 @@ A rule-based engine analyzes:
 
 ---
 
-## 🎨 UI Features
+## UI Features
 
 - **Dark theme** with custom CSS
 - **4 tabs**: Job Matches, Skill Analysis, Visualizations, Suggestions
@@ -108,7 +108,7 @@ A rule-based engine analyzes:
 
 ---
 
-## 🔧 Extending the Project
+## Extending the Project
 
 ### Add More Jobs
 Edit `data/jobs_db.py` and follow the existing schema:
@@ -140,7 +140,7 @@ In `utils/matcher.py`, you can swap TF-IDF for:
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 | Package | Purpose |
 |---|---|
@@ -153,7 +153,7 @@ In `utils/matcher.py`, you can swap TF-IDF for:
 
 ---
 
-## 📸 App Screenshots (what to expect)
+## App Screenshots (what to expect)
 
 1. **Upload Page** — Dark hero header, drag-and-drop PDF upload
 2. **Metrics Row** — Skills detected, jobs matched, top score, experience
